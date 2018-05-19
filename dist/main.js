@@ -78,7 +78,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".hello {\\r\\n  color: red;\\r\\n  /* one of the many usual css utilisations of images */\\r\\n  /* background-image: url('./img/icons/icon.png');  */\\r\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Montserrat);\", \"\"]);\n\n// module\nexports.push([module.i, \"/* Fonts */\\r\\n\\r\\n/* Elments */\\r\\n.hello {\\r\\n  color: red;\\r\\n  font-family: 'Montserrat', sans-serif;\\r\\n  /* one of the many usual css utilisations of images */\\r\\n  /* background-image: url('./img/icons/icon.png');  */\\r\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader");
 
 /***/ }),
 
@@ -148,6 +148,17 @@ eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\
 
 /***/ }),
 
+/***/ "./src/data/test-data.xml":
+/*!********************************!*\
+  !*** ./src/data/test-data.xml ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack:///./src/data/test-data.xml?");
+
+/***/ }),
+
 /***/ "./src/img/icons/icon.png":
 /*!********************************!*\
   !*** ./src/img/icons/icon.png ***!
@@ -167,7 +178,7 @@ eval("module.exports = __webpack_require__.p + \"4a5c29b27c84daf3f9e1594c432a1e3
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/icons/icon.png */ \"./src/img/icons/icon.png\");\n/* harmony import */ var _img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2__);\n/* JS modules */\r\n\r\n/* CSS Modules */\r\n\r\n/* Images to be utilized for dynamic methods (eg: to swap out images)*/\r\n\r\n/* * */\r\nfunction component() {\r\n  var element = document.createElement('div');\r\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\r\n  element.classList.add('hello');\r\n\r\n  //test add image to our div\r\n  var myRandomIcon = new Image();\r\n  myRandomIcon.src = _img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a;\r\n  element.appendChild(myRandomIcon);\r\n\r\n  return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/icons/icon.png */ \"./src/img/icons/icon.png\");\n/* harmony import */ var _img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _data_test_data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data/test-data.xml */ \"./src/data/test-data.xml\");\n/* harmony import */ var _data_test_data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_test_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* JS modules */\r\n\r\n/* CSS Modules */\r\n\r\n/* Images to be utilized for dynamic methods (eg: to swap out images)*/\r\n\r\n/* Data files (if no db connected) */\r\n\r\n/* * */\r\nfunction component() {\r\n  var element = document.createElement('div');\r\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\r\n  element.classList.add('hello');\r\n\r\n  // test add image to our div\r\n  var myRandomIcon = new Image();\r\n  myRandomIcon.src = _img_icons_icon_png__WEBPACK_IMPORTED_MODULE_2___default.a;\r\n  element.appendChild(myRandomIcon);\r\n\r\n  // log out static data\r\n  console.log(_data_test_data_xml__WEBPACK_IMPORTED_MODULE_3___default.a);\r\n\r\n  return element;\r\n}\r\n\r\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

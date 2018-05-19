@@ -9,6 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
+        // CSS
         test: /\.css$/,
         use: [
           'style-loader',
@@ -16,9 +17,31 @@ module.exports = {
         ]
       },
       {
+        // Images
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
+        ]
+      },
+      {
+        // Fonts
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        // Data
+        test: /\.(csv|tsv)$/,
+        use: [
+          'csv-loader'
+        ]
+      },
+      {
+        // Data
+        test: /\.xml$/,
+        use: [
+          'xml-loader'
         ]
       }
     ]
