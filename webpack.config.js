@@ -1,4 +1,11 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+var pathsToClean = ['dist'];
+var cleanOptions = {
+  root:     'C:/Users/bcloete/Documents/GitHub/wip-webpack-project/dist',
+  verbose:  true,
+  dry:      false
+};
 
 module.exports = {
   entry: './src/index.js',
@@ -45,5 +52,8 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(pathsToClean, cleanOptions)
+  ]
 };
